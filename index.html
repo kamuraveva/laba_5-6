@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Forms</title>
+</head>
+<body>
+    <script src="js/main.js"></script>
+    <form action="index.html" method="post" id="form">
+        
+        <div class="form_1">
+            <input type="text" placeholder="Enter your name" name="user_name" id="name" onkeydown="empty_name()">
+            <span id="text"></span>
+            
+            <input type="text" placeholder="Enter email address" name="user_email" id="email" onkeydown="validation()">
+            <span id="text_1"></span>
+            
+            <input type="text" placeholder="Enter your subject" name="user_subject" id="subject" onkeydown="empty_subject()">
+            <span id="text_2"></span>
+        </div>
+        
+        <div class="form_2">
+            <textarea placeholder="Message" name="user_message" id="message"></textarea>
+        <div>
+            <input type="submit" value="Send message" class="btn">
+        </div>
+        </div>
+    </form>
+</body>
+</html>
